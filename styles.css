@@ -70,7 +70,6 @@ h1 {
 }
 
 
-
 /* Mobile-First Media Queries */
 
 @media all and (max-width: 350px) {
@@ -78,7 +77,6 @@ h1 {
 	.gallery-container {
 		top: 20em;
 	}
-
 }
 
 @media all and (min-width: 481px) and (max-width: 767px) {
@@ -86,7 +84,6 @@ h1 {
 	.gallery-item {
 		width: 70%;
 	}
-	
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
