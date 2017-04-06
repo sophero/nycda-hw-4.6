@@ -1,0 +1,118 @@
+body {
+	font-family: Verdana, sans-serif;
+	background-color: #22272d;
+	color: #05a1c4;
+}
+
+h1 {
+	font-size: 4em;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+#concerts {
+	background-image: url('wittr.jpg');
+}
+
+#family {
+	background-image: url('jack-harrisons-bight-3.jpg');
+}
+
+.details-light {
+	font-weight: lighter;
+	transition: all 0.3s;
+}
+
+.details-light:hover {
+	color: #7ccdff;
+}
+
+.dev-title {
+	transition: all 0.3s;
+}
+
+.dev-title:hover {
+	color: #6fcbe8;
+}
+
+.default-cursor:hover {
+	cursor: default;
+}
+
+.banner {
+	width: 100vw;
+	text-align: center;
+	background-color: black;
+	position: fixed;
+}
+
+.gallery-container {
+	width: 90vw;
+	position: relative;
+	top: 15em;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.gallery-item {
+	width: 75vw;
+	min-width: 320px;
+	height: 75vw;
+	min-height: 320px;
+	max-height: 380px;
+	border: 3px solid black;
+	border-radius: 2px;
+	margin: 20px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+/* Mobile-First Media Queries */
+
+@media all and (max-width: 350px) {
+
+	.gallery-container {
+		top: 20em;
+	}
+
+}
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+
+	.gallery-item {
+		width: 70%;
+	}
+	
+}
+
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+	.gallery-item {
+		width: 40%;
+		min-width: 280px;
+		max-height: 320px;
+	}
+}
+
+@media all and (min-width: 992px) {
+
+	.gallery-item {
+		width: 35%;
+		min-width: 320px;
+		max-height: 320px;
+		margin: 40px;
+	}
+}
+
+@media all and (min-width: 1200px) {
+
+	.gallery-item {
+		margin: 40px 50px;
+	}
+}
+
